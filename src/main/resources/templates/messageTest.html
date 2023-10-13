@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+  <div class="center">
+    <form th:action="@{/messageTest}" method="post">
+      <input type="text" name="mmmmm" placeholder="名前を書いてね！">
+      <button type="submit">送信</button>
+    </form>
+  </div>
+
+  <div class="center">
+    <p th:text="${message}" th:if="${message} != null"></p>
+  </div>
+
+</head>
+<body>
+
+</body>
+</html>
